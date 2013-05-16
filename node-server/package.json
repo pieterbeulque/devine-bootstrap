@@ -1,0 +1,18 @@
+{
+  "name": "YOUR_PROJECT_NAME",
+  "dependencies": {
+    "express": "3.x",
+    "express3-handlebars": "*",
+    "async": "*",
+    "handlebars": "*",
+    "mysql": "*"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "node": "*"
+  },
+  "subdomain": "devine-bootstrap",
+  "devDependencies": {
+    "nodemon": "*"
+  }
+}
