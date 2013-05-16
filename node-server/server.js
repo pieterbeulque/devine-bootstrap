@@ -15,8 +15,7 @@ client = mysql.createConnection({
 // Use Handlebars
 hbs = exphbs.create({
     extname: '.hbs',
-    defaultLayout: 'main',
-    partials: 'views/partials'
+    defaultLayout: 'main'
 });
 
 // Create the app
