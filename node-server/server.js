@@ -15,8 +15,7 @@ client = mysql.createConnection({
 // Use Handlebars
 hbs = exphbs.create({
     extname: '.hbs',
-    defaultLayout: 'main',
-    partials: 'views/partials'
+    defaultLayout: 'main'
 });
 
 // Create the app
@@ -50,7 +49,7 @@ app.configure(function () {
 
 // Routes definieren
 require('./routes/api.js')(app);
-require('./routes/static.js')(app);
+require('./routes/pages.js')(app);
 
 // Server runs on port 3000
 app.listen(3000);
