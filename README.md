@@ -1,7 +1,7 @@
 devine-bootstrap
 ================
 
-Bootstrap for the Digital Design &amp; Media course Rich Media Development
+Bootstrap for the Digital Design &amp; Development course Rich Media Development 2
 
 ## Why?
 Quick project setup in different programming languages and for different purposes.
