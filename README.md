@@ -1,7 +1,7 @@
 devine-bootstrap
 ================
 
-Bootstrap for the Digital Design &amp; Media course Devine
+Bootstrap for the Digital Design &amp; Media course Rich Media Development
 
 ## Why?
 Quick project setup in different programming languages and for different purposes.
@@ -15,5 +15,6 @@ Quick project setup in different programming languages and for different purpose
 * Restful PHP API setup
 
 ## Credits
-Taught by @duivvv.
-Thrown together by @pieterbeulque.
+Taught by [@duivvv](http://twitter.com/duivvv).
+Thrown together by [@pieterbeulque](http://twitter.com/pieterbeulque).
+Check out Devine over [here](http://devine.be).
