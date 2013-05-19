@@ -9,12 +9,29 @@
 </head>
 <body>
     <div id="app"></div>
+    <script type="text/javascript">
+        function isModernBrowser () {
+            return ('querySelector' in document && 'addEventListener' in window && 'localStorage' in window);
+        }
+
+        if (isModernBrowser()) {
+            document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js">"><\/script>');
+        } else {
+            document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">"><\/script>');
+        }
+    </script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.4/handlebars.runtime.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
     <script type="text/javascript">
-        window.$ || document.write('<script src="js/vendor/zepto.js">"><\/script>');
+        if (!window.$) {
+            if (isModernBrowser()) {
+                document.write('<script src="js/vendor/zepto.js">"><\/script>');
+            } else {
+                document.write('<script src="js/vendor/jquery.js">"><\/script>');
+            }
+        }
         window.Handlebars || document.write('<script src="js/vendor/handlebars.js">"><\/script>');
         window._ || document.write('<script src="js/vendor/underscore.js">"><\/script>');
         window.Backbone || document.write('<script src="js/vendor/backbone.js">"><\/script>');
