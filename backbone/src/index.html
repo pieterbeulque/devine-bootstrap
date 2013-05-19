@@ -11,7 +11,7 @@
     <div id="app"></div>
     <script type="text/javascript">
         function isIE () {
-            return ('__proto__' in {});
+            return !('__proto__' in {});
         }
 
         if (!isIE()) {
