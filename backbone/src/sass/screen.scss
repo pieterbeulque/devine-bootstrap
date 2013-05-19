@@ -1,0 +1,12 @@
+// To find out why the weird structure
+// Take a look at smacss.com
+
+@import "compass/reset";
+@import "compass";
+
+@import "_variables";
+@import "_base";
+
+@import "modules/_example";
+
+@import "_layout";

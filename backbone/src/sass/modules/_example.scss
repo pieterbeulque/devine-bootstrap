@@ -1,0 +1,13 @@
+// An example module
+
+.example {
+    display: block;
+
+    &.is-collapsed {
+        display: none;
+    }
+}
+
+.example-title {
+    font-size: 2em;
+}
