@@ -115,6 +115,7 @@ module.exports = function (grunt) {
                         Backbone: true,
                         console: true,
                         Handlebars: true,
+			FastClick: true,
                         Settings: true,
                         tpl: true
                     },
