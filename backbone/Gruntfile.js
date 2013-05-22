@@ -6,7 +6,8 @@ var jspaths = [
         'src/js-dev/App.js',
         'src/js-dev/main.js'
     ], csspaths = [
-        'src/sass/*.scss'
+        'src/sass/*.scss',
+        'src/sass/modules/*.scss'
     ], templatepaths = [
         'src/templates/*.hbs'
     ], concatpaths = ['src/js/templates.js'].concat(jspaths);
